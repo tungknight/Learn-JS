@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content" >Nội dung của thẻ div</div>
+    <input type="button" id="get_content" value="Hiển thị nội dung" onclick="get_content()"/>
+    <input type="button" id="set_content" value="Sửa nội dung" onclick="set_content()"/>
+    <script>
+        function get_content()
+        {
+            var html = document.getElementById("content").innerHTML;
+            alert("Nội dung đã lấy"+html);
+        }
+        function set_content()
+        {
+            document.getElementById("content").innerHTML = "<h2>Sửa nội dung</h2>";
+
+        }
+    </script>
+</body>
+</html>

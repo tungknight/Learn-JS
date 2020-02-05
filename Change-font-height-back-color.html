@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">Thử một vài tính năng nào!!!</div>
+    <input type="button" value="Đổi màu" onclick="change_color()" id="change_color"/>
+    <input type="button" value="Đổi nền" onclick="change_background()" id="change_background"/>
+    <input type="button" value="Đổi kích thước font" onclick="change_fontSize()" id="change_fontSize"/>
+    <input type="button" value="Đổi chiều cao" onclick="change_height()" id="change_height"/>
+    <script>
+        function change_color()
+        {
+            document.getElementById("test").style.color = "blue";
+        }
+        function change_background()
+        {
+            document.getElementById("test").style.background = "green";
+
+        }
+        function change_fontSize()
+        {
+            document.getElementById("test").style.fontSize = "xx-large";
+        }
+        function change_height()
+        {
+            document.getElementById("test").style.height = "50px";
+        }
+    </script>
+</body>
+</html>

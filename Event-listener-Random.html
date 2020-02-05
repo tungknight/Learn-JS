@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Dãy số ngẫu nhiên khi rê chuột vào!
+    </h3>
+    <div id="result"></div>
+    <input type="button" id="stop_random" value="STOP RANDOM"/>
+    <input type="button" id="start_random" value="START RANDOM"/>
+    <script>
+        var result = document.getElementById("result");
+        var stop_random = document.getElementById("stop_random");
+        //var html = document.getElementsByTagName("html")[0];
+        function do_random()
+        {
+            var randomString = Math.random();
+            result.innerHTML = randomString;
+        }
+        result.addEventListener('mousemove', do_random);
+        stop_random.addEventListener('click',function()
+        {
+            result.removeEventListener('mousemove',do_random);
+        });
+    </script>
+</body>
+</html>

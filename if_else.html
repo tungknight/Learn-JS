@@ -1,0 +1,20 @@
+function kiem_tra_nam_nhuan(nam)
+{
+    if (nam % 100 == 0)
+    {
+        if (nam % 400 == 0){
+            alert(nam + ' là năm nhuận');
+        }
+        else { // ngược lại không phải năm nhuận
+            alert(nam + ' không phải năm nhuận');
+        }
+    }
+    else if (nam % 4 == 0){ // trường hợp chia hết cho 4 thì là năm nhuận
+        alert(nam + ' là năm nhuận');
+    }
+    else { // cuối cùng trường hợp không phải năm nhuận
+        alert(nam + 'không phải là năm nhuận');
+    }
+}
+// sử dụng
+kiem_tra_nam_nhuan(4);

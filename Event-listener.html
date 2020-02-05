@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="" id="txt-val"/>
+    <div id="result"></div>
+    <script>
+        var input = document.getElementById("txt-val");
+        input.addEventListener('keyup',function()
+        {
+            document.getElementById('result').innerHTML = input.value;
+        }
+        );
+        input.addEventListener('keyup',function()
+        {
+            if(input.value.length > 5)
+            {
+                alert("kí tự bạn vừa nhập có độ dài lớn hơn 5");
+            }
+        }
+        );
+    </script>
+</body>
+</html>
